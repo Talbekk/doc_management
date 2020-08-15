@@ -1,4 +1,8 @@
 import firebase from 'firebase'
+import "firebase/auth";
+import "firebase/database";
+import "firebase/storage";
+
 var config = {
     apiKey: "AIzaSyDlGBdW_YwPN3l7-TiRZeiLn8hvK0_8e-U",
     authDomain: "doc-management-tool.firebaseapp.com",
@@ -9,5 +13,8 @@ var config = {
     appId: "1:195494875029:web:3354ec71bb2193e038309c",
     measurementId: "G-K47EV4GT4Z"
 };
-var fire = firebase.initializeApp(config);
+const fire = firebase.initializeApp(config);
+export const auth = firebase.auth();
+export const db = firebase.database();
+export const storage = firebase.storage();
 export default fire;
