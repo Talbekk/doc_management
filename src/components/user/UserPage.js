@@ -5,7 +5,6 @@ import { AuthContext } from "../../utils/Auth.js";
 
 export default function UserPage() {
 
-    const [infoSet, setInfoSet] = useState(false);
     const {userData} = useContext(AuthContext);
 
   return (
