@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-import LoginComponent from "../components/LoginComponent";
+import RegisterComponent from "../components/RegisterComponent";
 import { Redirect } from "react-router-dom";
 import { AuthContext } from "../utils/Auth";
 
-const AuthContainer = () => {
+const RegisterContainer = () => {
     const { currentUser } = useContext(AuthContext);
   
     if (currentUser) {
@@ -12,9 +12,9 @@ const AuthContainer = () => {
     
     return (
         <div>  
-            <LoginComponent />
+            <RegisterComponent />
         </div>
     );
   };
   
-  export default AuthContainer;
+  export default RegisterContainer;
