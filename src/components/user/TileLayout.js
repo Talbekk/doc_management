@@ -10,7 +10,6 @@ export default function TileLayout(){
     return (
         <>
         {(userData.tiles) && <TileList/>}
-        <p>Enter Layout</p>
         <AddTileForm/>
         </>
     )
