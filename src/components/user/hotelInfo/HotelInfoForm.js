@@ -1,12 +1,10 @@
 import React, { useContext, useState } from "react";
-import { AuthContext } from "../../utils/Auth.js";
-import { db } from "../../fire";
+import { AuthContext } from "../../../utils/Auth.js";
+import { db } from "../../../fire";
 
 export default function HotelInfo({setInfoSet}) {
 
     const { currentUser } = useContext(AuthContext);
-    const { userData } = useContext(AuthContext);
-
     const [hotelName, setHotelName] = useState("");
     const [address, setAddress] = useState("");
     const [email, setEmail] = useState("");
