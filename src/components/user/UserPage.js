@@ -10,7 +10,7 @@ export default function UserPage() {
 
   return (
     <div>
-        <div>
+        <div className="hotel-info">
         <h4>Hotel Information:</h4>
         {(userData.hotelInfo) ? 
         <HotelInfoCard/>

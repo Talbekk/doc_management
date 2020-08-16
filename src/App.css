@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.tile-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.tile-list-item,
+.hotel-info {
+  margin: 10px 20px;
+  padding: 20px;
+  border: 1px #000 solid;
+}

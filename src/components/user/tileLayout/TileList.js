@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { AuthContext } from "../../../utils/Auth.js";
 import TileListItem from "./TileListItem";
 import { db } from "../../../fire";
+import "../../../App.css"
 
 export default function TileList(){
 
@@ -18,12 +19,12 @@ export default function TileList(){
       }
 
     return (
-        <>
+        <div className="tile-list">
         { (userData.tiles) &&
             Object.values(userData.tiles).map((tile, index) => {
                 return <TileListItem tile={tile} key={index} index={index} handleDeleteTile={handleDeleteTile}/>
             })
         }
-        </>
+        </div>
     )
 }
