@@ -66,3 +66,15 @@ th {
 table, th, td {
   border: 1px solid black;
 }
+
+.trackers {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.data-entry {
+  margin: 0 10px;
+  padding: 10px;
+  border: 1px #000 solid;
+}

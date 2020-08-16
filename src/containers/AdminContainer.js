@@ -2,6 +2,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { db } from "../fire";
 import { AuthContext } from "../utils/Auth";
+import AdminPage from "../components/admin/AdminPage";
 
 export default function AdminContainer() {
   const [userLists, setUserLists] = useState([]);
@@ -34,7 +35,7 @@ export default function AdminContainer() {
 
   return (
     <div className="admin-container">
-      <p>Admin</p>
+      <AdminPage/>
     </div>
   );
 }

@@ -9,6 +9,7 @@ export default function TileListItem({tile, index, handleDeleteTile}){
             <p>{tile.name}</p>
             <p>{tile.description}</p>
             <button onClick={() => handleDeleteTile(index)}>Remove</button>
+            <button>Edit</button>
         </div>
     )
 }
