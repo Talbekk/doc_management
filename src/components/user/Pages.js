@@ -10,8 +10,7 @@ export default function Pages(){
     return (
         <>
             <AddPageForm/>
-            {/* {(userData.pages) && <PagesList/>} */}
-            <p>Test</p>
+            {(userData.pages) && <PagesList/>}
         </>
     )
 }

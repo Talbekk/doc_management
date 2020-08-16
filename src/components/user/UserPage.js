@@ -24,8 +24,11 @@ export default function UserPage() {
           <TileLayout/>
         </div>
         <div>
-          <h4>Pages</h4>
+      <h4>Pages: {Object.keys(userData.pages).length} / 5</h4>
           <Pages/>
+        </div>
+        <div>
+          {(Object.keys(userData.pages).length >= 5) && <button>Submit</button>}
         </div>
     </div>
   );

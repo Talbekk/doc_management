@@ -54,3 +54,15 @@
   padding: 20px;
   border: 1px #000 solid;
 }
+
+table {
+  width: 100%;
+}
+
+th {
+  height: 50px;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
