@@ -11,6 +11,8 @@ export default function UserPage() {
 
   return (
     <div>
+       {(userData != null) &&(
+         <div>
         <div className="hotel-info">
         <h4>Hotel Information:</h4>
         {(userData.hotelInfo) ? 
@@ -24,12 +26,14 @@ export default function UserPage() {
           <TileLayout/>
         </div>
         <div>
-      <h4>Pages: {Object.keys(userData.pages).length} / 5</h4>
+      <h4>Pages:</h4>
+      {(userData.pages) && <p>{Object.keys(userData.pages).length} / 5</p>}
           <Pages/>
         </div>
         <div>
-          {(Object.keys(userData.pages).length >= 5) && <button>Submit</button>}
+          {(userData.pages) && ((Object.keys(userData.pages).length >= 5) && <button>Submit</button>)}
         </div>
+        </div>)}
     </div>
   );
 }
